@@ -1,0 +1,23 @@
+Aprendi a usar o git init para iniciar um repositório e git add para adicionar arquivos.
+
+Comandos Git:
+
+- git log: Mostra o histórico de commits do repositório, incluindo mensagens e hashes.
+- git status: Exibe o estado atual dos arquivos no repositório (modificados, adicionados, etc).
+- git diff: Mostra as diferenças entre o conteúdo alterado e o último commit.
+- git restore: Restaura o conteúdo de um arquivo para o estado do último commit.
+- git checkout: Permite trocar de branch ou restaurar versões antigas de arquivos.
+- git reset: Remove arquivos da área de staging ou desfaz commits (perigoso se usado incorretamente).
+- git revert: Cria um novo commit que desfaz as mudanças de um commit específico, mantendo o histórico limpo.
+
+
+
+Reflexão:
+
+- Quando é mais seguro usar git reset e quando é melhor usar git revert?
+  git reset é mais indicado quando estou sozinho no projeto e posso reescrever o histórico com segurança.
+  git revert é mais seguro para projetos colaborativos, pois mantém o histórico e evita conflitos com outros desenvolvedores.
+
+- Qual a diferença prática entre corrigir um erro antes de fazer commit e depois?
+  Antes do commit, basta editar o arquivo normalmente. Depois do commit, é necessário usar comandos como reset ou revert para desfazer a alteração, o que pode afetar o histórico do repositório.
+
